@@ -5,23 +5,23 @@
 
 1683047821 c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\carta.h
 
-1683066604 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\pilacartes.cpp
+1683114726 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\pilacartes.cpp
 	<iostream>
 	"PilaCartes.h"
 	"Carta.h"
 
-1683066312 c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\pilacartes.h
+1683114668 c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\pilacartes.h
 	"Carta.h"
 
-1683064654 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\baralla.cpp
+1683114872 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\baralla.cpp
 	<iostream>
 	"Baralla.h"
 	"Carta.h"
 
-1683064597 c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\baralla.h
+1683114921 c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\baralla.h
 	"Carta.h"
 
-1683065914 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\main.cpp
+1683113236 source:c:\users\jaume\desktop\udg\1r gddv\mtp ii\acme 9\barrejacartes\main.cpp
 	<iostream>
 	"Baralla.h"
 	"PilaCartes.h"

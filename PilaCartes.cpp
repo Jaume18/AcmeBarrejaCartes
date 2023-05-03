@@ -14,9 +14,9 @@ PilaCartes::PilaCartes(const PilaCartes& o){
     copia(o);
 }
 
-/*PilaCartes::~PilaCartes() {
+PilaCartes::~PilaCartes() {
     allibera();
-}*/
+}
 
 
 bool PilaCartes::buida() const{
@@ -66,7 +66,7 @@ void PilaCartes::mostrar(){
     while(aux!=NULL){
 
         aux->c.mostrar();
-        aux->seg;
+        aux=aux->seg;
 
     }
 
@@ -109,10 +109,6 @@ void PilaCartes::copia(const PilaCartes& o){
             aux = aux->seg;
         }
     }
-
-
-
-
 }
 
 

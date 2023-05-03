@@ -5,13 +5,33 @@ using namespace std;
 Baralla::Baralla()
 {
     a_llavor=0;
+    a_n=0;
+    a_max=10;
+    reserva();
 }
 
 Baralla::Baralla(int llavor){
 
     a_llavor=llavor;
-
     crea_baralla();
+
+}
+Baralla::Baralla(const Baralla &b){
+    copia(b);
+}
+
+/*Baralla::~Baralla(){
+
+    allibera();
+}*/
+
+Baralla &Baralla::operator=(const Baralla &b){
+
+    if(this != &b){
+        allibera();
+        copia(b);
+    }
+    return *this;
 
 }
 
@@ -47,18 +67,14 @@ void Baralla::afegir(const Carta &c){
 void Baralla::mostrar(){
 
     for(int i=0; i<a_n;i++){
-
         a_t[i].mostrar();
     }
-
-
 }
 
 void Baralla::barrejar(){
 
 
     for(int i=a_n-1; i>0;i--){
-
         int pos = aleatori(i+1);
         intercanvi(a_t[pos],a_t[i]);
 
@@ -75,13 +91,21 @@ void Baralla::intercanvi(Carta &c1, Carta &c2){
 }
 
 Carta Baralla::partirBaralla(int pos){
-
         return a_t[pos];
+}
+void Baralla::eliminarCarta(int pos){
+
 
 }
 
 int Baralla::returnMeitat(){
     return a_n/2;
+
+}
+
+void Baralla::allibera(){
+
+    delete []a_t;
 
 }
 
@@ -101,6 +125,8 @@ void Baralla::reserva(){
     a_t=new Carta[a_max];
 
 }
+
+
 
 void Baralla::expandeix(){
     Carta *aux = a_t;

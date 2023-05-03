@@ -9,7 +9,7 @@ class PilaCartes
     public:
         PilaCartes();
         PilaCartes(const PilaCartes& o);
-        //~PilaCartes();
+        ~PilaCartes();
         bool buida() const;
         Carta cim() const;
         void empila(Carta c);

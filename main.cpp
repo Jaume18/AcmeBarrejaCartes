@@ -14,18 +14,21 @@ using namespace std;
 void omplir_piles(Baralla& baralla, PilaCartes& pila_esquerra, PilaCartes& pila_dreta)
 {
     Carta c;
-
+    int MAX=baralla.returnMeitat();
     int pos=0;
     //pila_dreta.empila(baralla.partirBaralla(pos));
-   while(pos<baralla.returnMeitat()){
+   while(pos<MAX){
     c=baralla.partirBaralla(pos);
+    baralla.eliminarCarta(pos);
      //pila_dreta.empila(c);
     c.mostrar();
     pos++;
    }
-   while(pos<baralla.returnMeitat()*2){
+   pos=0;
+   while(pos<MAX){
 
     c=baralla.partirBaralla(pos);
+    baralla.eliminarCarta(pos);
     //pila_esquerra.empila(c);
     c.mostrar();
     pos++;

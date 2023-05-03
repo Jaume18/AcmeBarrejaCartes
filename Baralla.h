@@ -8,11 +8,15 @@ class Baralla
      public:
         Baralla();
         Baralla(int llavor);
+        ~Baralla();
+        Baralla(const Baralla &b);
+        Baralla& operator=(const Baralla &b);
         int aleatori(int rang);
         void crea_baralla();
         void afegir(const Carta &c);
         void mostrar();
         void barrejar();
+        void eliminarCarta(int pos);
         void intercanvi(Carta &c1, Carta &c2);
         Carta partirBaralla(int pos);
         int returnMeitat();
@@ -32,6 +36,7 @@ class Baralla
         void copia(const Baralla &b);
         //Pre: --; Post: memòria reservada per a_max Punt2D
         void reserva();
+        void elimina();
         void expandeix();
 };
 
